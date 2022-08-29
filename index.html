@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/book-icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="app.js" ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/book-icon.png" />
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="git">
-        <a href="https://github.com/FOXYSAMU" target="_blank"><img src="img/github.png" alt="octocat" draggable="false"></a>
+      <a href="https://github.com/FOXYSAMU" target="_blank"
+        ><img src="img/github.png" alt="octocat" draggable="false"
+      /></a>
     </div>
 
     <div class="main-cont">
-        <div class="header">
-            <div class="title">
-                <h1>Library</h1>
-            </div>
-            <p>The Best Place To Store Your Books</p>
+      <div class="header">
+        <div class="title">
+          <h1>Library</h1>
         </div>
-        <div class="new-book">
-            <button id="newBook">New Book</button>
-        </div>
-            <div class="books-cont">
-            </div>
-        </div>
-        <div class="modal" id="addNewBookModal">
-            <h1>New Book</h1>
-            <form id="bookForm">
-                <input class="value" type="text" placeholder="Title:" data-type="Title" required>
-                <input class="value" type="text" placeholder="Author:" data-type="Author" required>
-                <input class="value" type="number" placeholder="Pages" data-type="Pages" min="0" required>
-            </form>
-            <div class="checkbox-txt">
-                <p>Have you read it?</p>
-                <label class="switch">
-                    <input type="checkbox" data-type="ReadOrNot">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <div class="modalbtns-cont">
-                <button id="clearField">Clear fields</button>
-                <button id="addBook" class="disabled" form="bookForm" type="submit">Add Book</button>
-            </div>
-        </div>
-        <div class="overlay" id="overlay"></div>
-</body>
+        <p>The Best Place To Store Your Books</p>
+      </div>
+      <div class="new-book">
+        <button id="newBook">New Book</button>
+      </div>
+      <div class="books-cont"></div>
+    </div>
+    <div class="modal" id="addNewBookModal">
+      <h1>New Book</h1>
+      <form id="bookForm">
+        <input
+          class="value"
+          type="text"
+          placeholder="Title:"
+          data-type="Title"
+          required
+        />
+        <input
+          class="value"
+          type="text"
+          placeholder="Author:"
+          data-type="Author"
+          required
+        />
+        <input
+          class="value"
+          type="number"
+          placeholder="Pages"
+          data-type="Pages"
+          min="0"
+          required
+        />
+      </form>
+      <div class="checkbox-txt">
+        <p>Have you read it?</p>
+        <label class="switch">
+          <input type="checkbox" data-type="ReadOrNot" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="modalbtns-cont">
+        <button id="clearField">Clear fields</button>
+        <button id="addBook" class="disabled" form="bookForm" type="submit">
+          Add Book
+        </button>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+  </body>
 </html>
